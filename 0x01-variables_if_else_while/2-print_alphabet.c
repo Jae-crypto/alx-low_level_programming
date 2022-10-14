@@ -1,16 +1,14 @@
-nclude <stdio.h>
-
+#include <stdio.h>
 /**
- *  *main-program entry point.
- *   *Return:0 if no error, non zero if error.
- *    **/
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
-char i;
-for (i = 'a'; i <= 'z'; i++)
-{
-putchar(i);
+char lowerCase;
+for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+putchar(lowerCase);
 putchar('\n');
 return (0);
 }
-
