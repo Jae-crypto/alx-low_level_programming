@@ -1,20 +1,23 @@
 #include <stdio.h>
-
 /**
- *  *main-program entry point.
- *   *Return:0 no error, non zero if error.
- *    **/
+ *main - main block
+ *Description:  prints the alphabet in lowercase,
+ *and then in uppercase, followed by a new line.
+ *Return: 0
+ */
 int main(void)
 {
-char i;
-char j;
-for (i = 'a'; i <= 'z'; i++)
+char c = 'a';
+while (c <= 'z')
 {
-putchar(i);
+putchar(c);
+c++;
 }
-for (j = 'A'; j <= 'Z'; j++)
+c = 'A';
+while (c <= 'Z')
 {
-putchar(j);
+putchar(c);
+c++;
 putchar('\n');
 return (0);
 }
