@@ -19,7 +19,8 @@ for (m = 0; m <= 9; m++)
 {
 if (i == 2 && j > 3)
 {break;
-}_putchar(i + '0');
+}
+_putchar(i + '0');
 _putchar(j + '0');
 _putchar(':');																																												_putchar(k + '0');
 _putchar(m + '0');	
