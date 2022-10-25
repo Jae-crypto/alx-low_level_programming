@@ -1,15 +1,7 @@
-#include "main.h"
-
-/**
- *swap_int - swap values
- *@a: data to be swaped
- *@b: data to be swaped
- *Return:0
- */
-
-void swap_int(int *a, int *b)
-{
-int temp = *a;
-*a = *b;
-*b = temp;
-}
+/**                                                                                                                                                                       
+*_puts - prints a string
+*@str: string to be printed                                                                                                                                     */    
+                                                                                                                                                                
+void _puts(char *str)                                                                                                                                           {                                                                                                                                                                         
+while (*str != '\0')                                                                                                                                              {                                                                                                                                                             _putchar(*str++);   
+}     
