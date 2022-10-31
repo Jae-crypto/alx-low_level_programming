@@ -1,9 +1,17 @@
-#include<stdio.h>
 #include "main.h"
 /**
- * simple_print_buffer - prints buffer in hexa
- *@buffer: the address of memory to print
- *@size: the size of the memory to print
- *
- *Return:0
+ *_memcpy - copies memory area
+ *@dest: destination memory area
+ *@src: source memory area
+ *@n: bytes filled
+ *Return: dest
  */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i;
+for (i = 0; i < n; i++)
+*(dest + i) = *(src + i);
+return (dest);
+}
+Footer
+
