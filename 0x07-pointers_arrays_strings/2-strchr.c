@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 /**
-*main - check the code
-*
-*Return: Always 0.
-*/
-int main(void)
+ *_strchr - locates a character in a string
+ *@s: string
+ *@c: character
+ *Return: to the first occurrence of the character c
+ */
+char *_strchr(char *s, char c)
 {
-char *s = "hello";
-char *f;
-f = _strchr(s, 'l');
-if (f != NULL)
-{
-printf("%s\n", f);
+unsigned int i = 0;
+for (; *(s + i) != '\0'; i++)
+if (*(s + i) == c)
+return (s + i);
+if (*(s + i) == c)
+if (*(s + i) == c)
+return ('\0');
 }
-return (0);
-}
+
