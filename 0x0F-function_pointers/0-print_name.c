@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include "dog.h"
 /**
-*print_name_as_is: prints a name as is
-*@name: name of the person
-*Return: Nothing.
+*print_name - prints the name of a function
+*@name: pointer
+*@f: pointer
+*Return: void.
 */
-
-void print_name_as_is(char *name)
+void print_name(char *name, void (*f)(char *))
 {
-printf("Hello, I am called %s\n", name);
+if (name == NULL || f == NULL)
+return;
+(*f)(name);
 }
 
 
