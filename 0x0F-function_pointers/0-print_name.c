@@ -4,11 +4,11 @@
 *print_name - prints the name of a function
 *@name: pointer
 *@f: pointer
-*Return: void.
+*Return:1 or 0
 */
 void print_name(char *name, void (*f)(char *))
 {
-if (name == NULL || f == NULL)
+if (f == NULL)
 return;
 (*f)(name);
 }
