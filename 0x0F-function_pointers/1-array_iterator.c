@@ -8,11 +8,16 @@
  *@action: pointer to a function
  *Return: void
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-size_t b;
-if (action == NULL || array == NULL || size <= 0)
-return;
-for (b = 0; b < size; b++)
-action(array[b]);
+	int i;
+
+	if (array == NULL || size <= 0 || action == NULL)
+			return;
+	
+	for (i = 0; i < size; i++)
+	{
+		(*action)(array[i]);
+	}
 }
