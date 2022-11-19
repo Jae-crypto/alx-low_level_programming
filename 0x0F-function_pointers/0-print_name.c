@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "dog.h"
+#include "function_pointers.h"
 /**
 *print_name - prints the name of a function
 *@name: pointer
